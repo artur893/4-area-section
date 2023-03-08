@@ -86,10 +86,14 @@
     flex-direction: column;
 
     & &__title-section {
-      flex-basis: auto;
-      margin: 0;
+      flex: 0 1 auto;
+      margin-top: 247px;
       justify-content: center;
       align-items: flex-start;
+    }
+
+    & &__title-description {
+      margin-top: 16px;
     }
 
     & &__title-container {
@@ -97,28 +101,40 @@
     }
 
     & &__cards-section {
+      display: flex;
       flex-direction: column;
       margin: 0;
-      justify-content: center;
-      align-items: flex-end;
+      margin-top: 8px;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     & &__cards-container {
+      margin: 0;
       justify-content: center;
       gap: 16px;
     }
 
     & &__card {
       width: 240px;
+      border-radius: 20px;
     }
 
     & &__card-image {
+      margin-top: 10px;
+      margin-bottom: 26px;
       width: 56px;
       height: 56px;
     }
 
+    & &__card-title {
+      margin-left: -2px;
+    }
+
     & &__card-description {
       font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 20px;
     }
   }
 
