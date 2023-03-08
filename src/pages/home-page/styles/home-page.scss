@@ -1,0 +1,144 @@
+.home-page {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-color);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+
+  & &__title-section {
+    flex: 1 1 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 159px;
+  }
+
+  & &__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 467px;
+  }
+
+  & &__title-header {
+    margin: 0;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.2px;
+  }
+
+  & &__title-description {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  & &__cards-section {
+    flex: 1 1 0px;
+    justify-content: flex-end;
+    margin-top: 159px;
+    margin-left: 109px;
+  }
+
+  & &__cards-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 31px 24px;
+    max-width: 600px;
+  }
+
+  & &__card {
+    width: 268px;
+    background-color: var(--bg-card);
+    text-align: center;
+    border-radius: 24px;
+  }
+
+  & &__card-image {
+    width: 64px;
+    height: 64px;
+    margin: 12px auto 28px auto;
+  }
+
+  & &__card-title {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  & &__card-description {
+    margin: 16px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 50%;
+  }
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+
+    & &__title-section {
+      flex-basis: auto;
+      margin: 0;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    & &__title-container {
+      width: 496px;
+    }
+
+    & &__cards-section {
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    & &__cards-container {
+      justify-content: center;
+      gap: 16px;
+    }
+
+    & &__card {
+      width: 240px;
+    }
+
+    & &__card-image {
+      width: 56px;
+      height: 56px;
+    }
+
+    & &__card-description {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+
+    & &__title-container {
+      width: 343px;
+    }
+
+    & &__title-header {
+      font-size: 32px;
+      margin: 48px 16px 0px 16px;
+    }
+
+    & &__title-description {
+      margin: 16px;
+    }
+
+    & &__card {
+      width: 343px;
+    }
+  }
+}
