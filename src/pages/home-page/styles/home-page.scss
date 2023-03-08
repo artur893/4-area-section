@@ -140,21 +140,32 @@
 
   @media screen and (max-width: 540px) {
 
+    & &__title-section{
+      margin: 0;
+    }
+
     & &__title-container {
       width: 343px;
     }
 
     & &__title-header {
       font-size: 32px;
-      margin: 48px 16px 0px 16px;
+      line-height: 40px;
+      margin: 48px auto 16px auto;
+      letter-spacing: 0;
     }
 
     & &__title-description {
-      margin: 16px;
+      margin-top: 0px;
     }
 
     & &__card {
       width: 343px;
+    }
+
+    & &__card-description {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }
