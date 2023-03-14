@@ -140,7 +140,7 @@
 
   @media screen and (max-width: 540px) {
 
-    & &__title-section{
+    & &__title-section {
       margin: 0;
     }
 
@@ -166,6 +166,22 @@
     & &__card-description {
       margin-left: 20px;
       margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    align-items: center;
+
+    & &__title-section {
+      width: 80%;
+    }
+
+    & &__cards-section {
+      width: 80%;
+    }
+
+    & &__card {
+      width: 100%;
     }
   }
 }
